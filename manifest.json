@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Email Address Extractor",
+  "version": "1.0",
+  "description": "Extracts all sender and recipient email addresses from a selected mail folder.",
+  "permissions": [
+		"accountsRead",
+		"messagesRead"
+	],
+  "browser_action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "Get Sender-Recipient List",
+    "default_icon": "icons/icon-48.png"
+  },
+  "icons": {
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "applications": {
+    "gecko": {
+      "id": "email-address-extractor@jsksoft",
+      "strict_min_version": "78.0"
+    }
+  }
+}
